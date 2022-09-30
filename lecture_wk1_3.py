@@ -22,23 +22,14 @@ def print_sum():
 # Given a list, find and print its largest string
 
 # Define a function that accepts a list
-def find_and_print_max(list):
-    # This function is designed to find the longest string in a provided list
-
-        #Expects as an input: a list of strigs
-
-        # This function does not return anything, but only prints the longest string
-        
-    # Set a max variable to track the largest string
+def find_and_print_max(list:list[str]) -> None:
     max_string = list[0]
-    # iterate through the list with a for loop
-    for a in list:
-        # compare each value to the max variable
+
+    for a in list: 
         if len(a) > len(max_string):
             print(f'Value {a} is longer than value {max_string}')
-            max_string = a
-            # if so, set max to be the current value
-        # print max variable
-        print(max_string)
+            max_string:str = a
+
+    print(max_string)
 
 find_and_print_max(['Moore', 'Rene', 'Jonathan', 'Marino', 'Hello', 'World'])
