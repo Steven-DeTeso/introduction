@@ -66,11 +66,21 @@
 #     print("looping - ", count)
 #     count += 1
 
-y = 3
-while y > 0:
-    print(y)
-    y = y - 1
-    if y == 0:
-        break
-else:		# only executes on a clean exit from the while loop (i.e. not a break)
-    print("Final else statement")
+# y = 3
+# while y > 0:
+#     print(y)
+#     y = y - 1
+#     if y == 0:
+#         break
+# else:		# only executes on a clean exit from the while loop (i.e. not a break)
+#     print("Final else statement")
+
+person = {
+
+"first_name": "Steven", "last_name": "DeTeso"
+}
+
+print(person["first_name"])
+full_name = person["first_name"] + " " + person["last_name"]
+
+print(full_name)
